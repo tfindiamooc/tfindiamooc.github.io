@@ -1,2 +1,4 @@
 name: Ashish Vijay Tendulkar, Google
 markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
