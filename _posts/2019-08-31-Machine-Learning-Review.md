@@ -3,7 +3,6 @@ layout: post
 title: "Machine Learning Review"
 date: 2019-08-31
 ---
-
 What is Machine Learning?
 
 We begin with a programming friendly definition. Why are we able to code 
