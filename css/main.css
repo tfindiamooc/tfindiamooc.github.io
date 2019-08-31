@@ -14,7 +14,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    # color: #999;
 }
 a:hover {
     text-decoration: underline;
@@ -39,6 +39,7 @@ footer {
 }
 ul.li {
     font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif'
     list-style-type: square;
 }
 
@@ -50,4 +51,5 @@ ul.posts {
 ul.posts li {
     font-size: 1.5em;
     list-style: circle;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif'
 }
