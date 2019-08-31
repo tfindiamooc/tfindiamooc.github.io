@@ -4,7 +4,8 @@ title: "Machine Learning Review"
 date: 2019-08-31
 ---
 
-#What is Machine Learning?
+What is Machine Learning?
+
 We begin with a programming friendly definition. Why are we able to code 
 addition of two numbers but unable to code handwritten digit detection 
 by computer algorithm? Take a couple of minutes to think about this.
@@ -60,14 +61,15 @@ Within supervised learning, we have two subtypes:
 * Label is a real number, we have a **regression** problem.
 * Label is a discrete quantity, we have a **classification** problem.
 
-**Question**: Provide an example each for supervised, 
-  unsupervised, regression and classification tasks.
+<span style="color:blue">Question: Provide an example each for supervised, 
+  unsupervised, regression and classification tasks.</span>
 
 Let's understand more about features: Each data item is represented 
 by a number of it's attributes or features.  The model provides mapping 
 between these features with the output.
 
-**Question**: Provide an example of data and it's features.
+<span style="color:blue">Question: Provide an example of data and it's 
+  features.</span>
 
 The features for data item is often determined by the domain experts.  
 The features can be of different types.
@@ -93,8 +95,9 @@ Now that the data is ready for training, next we fix a model.  There
 are different types of model. The simplest of them is a linear model.  
 * Linear regression: $y = b + w_1 x_1 + w_2 x_2 + ... + w_n x_n$ for 
 data with $n$ features ${x_1, x_2, \ldots, x_n}$.   This is an 
-equation of a hyperplane.  **Task**: Look at the video and understand 
-how does a model on a single feature look like.
+equation of a hyperplane.  <span style="color:blue">Task: 
+  Look at the video and understand how does a model on a single 
+  feature look like.</span>
 * Logistic regression: Instead of predicting a real number, we are 
 interested in predicting a probability of an input data item belonging 
 to a class.  The simplest model that can be used here is a logistic 
@@ -102,10 +105,12 @@ regression model.  This model first performs linear combination of
 features and weights: $z = b + w_1 x_1 + w_2 x_2 + …. + w_n x_n = 
 b + \sum_i=1^n x_i w_i$, and then apply logistic function to this 
 quantity, which returns a number between 0 to 1. 
-**Question**: Draw the logistic function by checking the video.  
+<span style="color:blue">Question: Draw the logistic function 
+  by checking the video.</span> 
 It is represented by the following equation 
-$Pr(y=1|x) = \frac{1}{1 + exp(-z)}$ **Question**: How does the 
-decision boundary between two classes look like?
+$Pr(y=1|x) = \frac{1}{1 + exp(-z)}$ 
+<span style="color:blue">Question: How does the 
+decision boundary between two classes look like?</span>
 
 This form of linear model is unable to separate classes that have 
 non-linear decision boundary.  In such cases, we need to perform 
