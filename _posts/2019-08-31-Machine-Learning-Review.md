@@ -92,12 +92,12 @@ points that are very different from most of the other points.
 
 Now that the data is ready for training, next we fix a model.  There 
 are different types of model. The simplest of them is a linear model.  
-* Linear regression: $y = b + w_1 x_1 + w_2 x_2 + ... + w_n x_n$ for 
+* **Linear regression**: $y = b + w_1 x_1 + w_2 x_2 + ... + w_n x_n$ for 
 data with $n$ features ${x_1, x_2, \ldots, x_n}$.   This is an 
 equation of a hyperplane.  <span style="color:blue">Task: 
   Look at the video and understand how does a model on a single 
   feature look like.</span>
-* Logistic regression: Instead of predicting a real number, we are 
+* **Logistic regression**: Instead of predicting a real number, we are 
 interested in predicting a probability of an input data item belonging 
 to a class.  The simplest model that can be used here is a logistic 
 regression model.  This model first performs linear combination of 
@@ -115,10 +115,11 @@ This form of linear model is unable to separate classes that have
 non-linear decision boundary.  In such cases, we need to perform 
 feature crosses and use them as new features so that we can build 
 a classifier for non-linearly separable classes.  
-* Polynomial regression: $y = b + w_1 x_1 + w_2 x_2 +  w_3 x_1^2 + w_4 x_2^2 + w_5 x_1 x_2$.  
+* **Polynomial regression**: $y = b + w_1 x_1 + w_2 x_2 +  w_3 x_1^2 + w_4 x_2^2 + w_5 x_1 x_2$.  
 Here data has two features $x_1$ and $x_2$.  $x_1 x_2$ is obtained via feature crossing.  
-**Question**: How will this model look like geometrically?
-* Feedforward neural network (NN) models: We just saw that feature 
+<span style="color:blue">Question: How will this model look like 
+  geometrically?<span style="color:blue">
+* **Feedforward neural network (NN) models**: We just saw that feature 
 crossing is one way of building models for non-linearly separable 
 classes.  However we need to construct all the features by hand.  
 NN provides a way to automatically construct these features from 
