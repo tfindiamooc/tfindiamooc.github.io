@@ -39,8 +39,8 @@ footer {
 }
 ul.li {
     font-size: 1.5em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif'
-    list-style-type: square;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    list-style: circle;
 }
 
 ul.posts { 
