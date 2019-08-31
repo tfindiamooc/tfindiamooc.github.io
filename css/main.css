@@ -39,7 +39,7 @@ footer {
 }
 ul li {
     font-size: 1.5em;
-    list-style: none;
+    list-style: disc;
 }
 
 ul.posts { 
