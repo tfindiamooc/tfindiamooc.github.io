@@ -43,8 +43,9 @@ div ul li {
     #font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 ul li a {
-    font-size: 1.5em;
-    list-style: circle;
+    font-size: 1.0em;
+    text-decoration: none;
+    # color: #999;
     #font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 ul.posts { 
