@@ -42,12 +42,15 @@ div ul li {
     list-style: circle;
     #font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-
+ul li {
+    font-size: 1.5em;
+    list-style: circle;
+    #font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
 ul.posts li {
     font-size: 1.5em;
     list-style: circle;
