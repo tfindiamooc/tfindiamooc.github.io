@@ -16,6 +16,10 @@ a {
     text-decoration: none;
     # color: #999;
 }
+ul li a {
+    text-decoration: none;
+    # color: #999;
+}
 a:hover {
     text-decoration: underline;
 }
