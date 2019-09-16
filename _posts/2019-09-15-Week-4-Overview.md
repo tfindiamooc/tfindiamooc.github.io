@@ -4,14 +4,14 @@ title: "Overview of Week# 4"
 date: 2019-09-15
 ---
 
-### Overview of Week# 4
+# Overview of Week# 4
 
 Welcome to the week 4 of the course! In this week, we will learn how to build basic ML models with TensorFlow 2.0.  We will be building the following models:
 
-1. [Image Classification](https://www.youtube.com/watch?v=toduAqaz_EA&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=16)
-2. [Regression](https://www.youtube.com/watch?v=AO8zuIcx0Aw&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=17)
-3. [Classification of Structured Data](https://youtu.be/lCopG4tDSok?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
-4. [Text classification](https://youtu.be/bvYIicaVNTE?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
+* [Image Classification](https://www.youtube.com/watch?v=toduAqaz_EA&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=16)
+* [Regression](https://www.youtube.com/watch?v=AO8zuIcx0Aw&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=17)
+* [Classification of Structured Data](https://youtu.be/lCopG4tDSok?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
+* [Text classification](https://youtu.be/bvYIicaVNTE?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
 
 As we discussed in Week# 1, after building the model, we will encounter that we have achieved one of the following: (i) **overfitting**, (ii) **underfitting** or (iii) **just right fit model**.  We will concretely understand the concept of 
 underfitting and overfitting through practical examples.  Here is [the video for overfitting and underfitting](https://www.youtube.com/watch?v=j6uL6c14pUY&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=20). 
@@ -22,27 +22,27 @@ can store the model like JSON, YMAL and HDF5.  The model can be stored at the en
 take the intermediate model and use it to get a sense of how the model is performing on the given task. We will demonstrate how to restore the model from the latest checkpoint or from any checkpoint in the past.  Here is the [video 
 for saving and restoring models](https://youtu.be/Wi44C1sDBqk?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3).
 
-#### Note on teaching style/method
+### Note on teaching style/method
 
 In this week, we will be writing code for building ML models using concepts learnt so far in the course.  The lectures mainly focus on walking you through the colab notebooks and explaining how the model looks like.  We will not be 
 explaining any of the concepts explained so far in the course and we advise you to revisit the respective videos again. This has been in order to make more time to learn new concepts.
 
-### Broad steps in training ML model
+## Broad steps in training ML model
 
 As discussed in week# 1, most of these models will have the following broad steps:
 
-1. Load training data from files or from inbuilt datasets from keras or TensorFlow datasets.
-2. Data Exploration including visualization, dataset statistics, etc.
-3. Data Preprocessing which involves normalization, outlier removal etc.
-4. Model construction - We choose the appropriate model depending on the problem class and data exploration.  There are two steps in tf.keras API:
+* Load training data from files or from inbuilt datasets from keras or TensorFlow datasets.
+* Data Exploration including visualization, dataset statistics, etc.
+* Data Preprocessing which involves normalization, outlier removal etc.
+* Model construction - We choose the appropriate model depending on the problem class and data exploration.  There are two steps in tf.keras API:
   * Model building - Choose the model and write code to build it.  
   * Model Compilation where we specify loss function, optimization algorithm to use for training and metrics to track during training process.
-5. Model training by specifying training data and also validation data for diagnosing problems with training (like underfitting/overfitting, inappropriate learning rates etc.)
-6. Model evaluation on test data.
-7. Prediction on new data.
-8. Error analysis (in some cases), where we analyze errors made by model.  This learning is usually fed back in making changes in the mdoel for obtaining better performance. 
+* Model training by specifying training data and also validation data for diagnosing problems with training (like underfitting/overfitting, inappropriate learning rates etc.)
+* Model evaluation on test data.
+* Prediction on new data.
+* Error analysis (in some cases), where we analyze errors made by model.  This learning is usually fed back in making changes in the mdoel for obtaining better performance. 
 
-#### 1. Training Data
+### Training Data
 
 
 | Problem   |      Dataset      |  Source | ML problem |
@@ -55,16 +55,16 @@ As discussed in week# 1, most of these models will have the following broad step
 
 As you can see that we have datasets from mixed sources so that we can demonstrate how to load data from different sources. 
 
-#### 2. Data Visualization
+### Data Visualization
 We will be using `matplotlib` for visualization of structured data as well as image related visualizations (`imshow`). 
 
-#### 3. Data Preprocessing
+### Data Preprocessing
 
 * Structured data: We apply normalization on data in case of continous attributes.  We convert discrete attributes into appropriate representations like one-hot encoding, interger encoding or embeddings (which is handled as part of model.)
 * Image Data: We augment image data through rotation, translation and by adding noise.  This enables us to obtain more training examples from the existing ones.
 * Text Data: We construct vocabulary, discard in-frequent words. We also transform strings into appropriate feature representation like integer encoding or one-hot encoding.
 
-#### 4. Model Construction
+### Model Construction
 
 
 **Specification**
@@ -103,15 +103,15 @@ Depending of the problem, we provide the loss function.
 * For binary classification, we use `binary_cross_entropy_loss`
 * For multi-class classification, we user either `categorical_cross_entropy_loss` or `sparse_categorical_cross_entropy_loss`.
 
-#### 5. Model Training
+### Model Training
 
 We perfom model training with `model.fit` function where we give training data - features and labels, validation data - features and labels(optional), and number of epochs for training.
 
-#### 6. Model Evaluation
+### Model Evaluation
 
 We use `model.evaluate` function for evaluating model performance on test data.  We provide both test data and labels to the evaluate function.
 
-### 7. Model Training
+### Model Training
 
 Finally, we use `model.predict` function to predict labels for new data.  Here we only specify the data and the function returns its prediction in terms of labels.
 
