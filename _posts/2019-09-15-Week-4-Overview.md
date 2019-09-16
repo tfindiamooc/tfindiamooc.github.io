@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Overview of Week# 4"
+title: "Overview of Week 4"
 date: 2019-09-15
 ---
 
@@ -11,7 +11,7 @@ Welcome to the week 4 of the course! In this week, we will learn how to build ba
 * [Classification of Structured Data](https://youtu.be/lCopG4tDSok?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
 * [Text classification](https://youtu.be/bvYIicaVNTE?list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3)
 
-As we discussed in Week# 1, after building the model, we will encounter that we have achieved one of the following: (i) **overfitting**, (ii) **underfitting** or (iii) **just right fit model**.  We will concretely understand the concept of 
+As we discussed in Week 1, after building the model, we will encounter that we have achieved one of the following: (i) **overfitting**, (ii) **underfitting** or (iii) **just right fit model**.  We will concretely understand the concept of 
 underfitting and overfitting through practical examples.  Here is [the video for overfitting and underfitting](https://www.youtube.com/watch?v=j6uL6c14pUY&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=20). 
 
 Finally we often need to save the trained ML model so that we can use it later for prediction or use it to initialize weights of model in the next run.  We will cover the mechanism of storing a model in TensorFlow 2.0. We can either store 
