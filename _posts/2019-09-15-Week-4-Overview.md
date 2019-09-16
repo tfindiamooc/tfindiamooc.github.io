@@ -14,7 +14,7 @@ Welcome to the week 4 of the course! In this week, we will learn how to build ba
 As we discussed in Week# 1, after building the model, we will encounter that we have achieved one of the following: (i) **overfitting**, (ii) **underfitting** or (iii) **just right fit model**.  We will concretely understand the concept of 
 underfitting and overfitting through practical examples.  Here is [the video for overfitting and underfitting](https://www.youtube.com/watch?v=j6uL6c14pUY&list=PLOzRYVm0a65cTV_t0BYj-nV8VX_Me6Es3&index=20). 
 
-Finally we often need to save the trained ML model so that we can use it later for prediction or use it to initialize weights of model in the next run.  We will cover mechanism of storing model in TensorFlow 2.0. We can either store 
+Finally we often need to save the trained ML model so that we can use it later for prediction or use it to initialize weights of model in the next run.  We will cover the mechanism of storing a model in TensorFlow 2.0. We can either store 
 only weights of the model, store only architecture of the model or the both.  There are variety of formats in which we 
 can store the model like JSON, YMAL and HDF5.  The model can be stored at the end of training or after every few epochs during the training.  The later is very useful for models that take long time to train.  In such models, we can 
 take the intermediate model and use it to get a sense of how the model is performing on the given task. We will demonstrate how to restore the model from the latest checkpoint or from any checkpoint in the past.  Here is the [video 
@@ -27,7 +27,7 @@ explaining any of the concepts explained so far in the course and we advise you 
 
 # Broad steps in training ML model
 
-As discussed in week# 1, most of these models will have the following broad steps:
+As discussed in week 1, most of these models will have the following broad steps:
 
 * Load training data from files or from inbuilt datasets from keras or TensorFlow datasets.
 * Data Exploration including visualization, dataset statistics, etc.
@@ -97,7 +97,7 @@ model.compile(optimizer=optimizer,
 Depending of the problem, we provide the loss function.  
 * For regression, we use mean squared error `mse` or mean absolute error `mae`.
 * For binary classification, we use `binary_cross_entropy_loss`
-* For multi-class classification, we user either `categorical_cross_entropy_loss` or `sparse_categorical_cross_entropy_loss`.
+* For multi-class classification, we use either `categorical_cross_entropy_loss` or `sparse_categorical_cross_entropy_loss`.
 
 ## Model Training
 
